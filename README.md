@@ -13,6 +13,7 @@ Seamlessly use TCP/UDP connection(s) to control the GPIO pins on the Raspberry P
 - Run `example.py` on the computer.
     - `numpy` and `opencv` needed, install using `pip install numpy` and `pip install opencv-python`.
 - Run `on_pi/pi_client.py` on the Pi.
+- Use keys `d` and `a` to turn on and off the LED, and use key `g` to read button input.
 
 
 # Current to-do
