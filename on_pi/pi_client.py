@@ -1,11 +1,7 @@
 from gpio_client import GPIOClient
 
-host_ip = "192.168.0.17"  # Local IP of your computer, will be printed when server is started.
-port = 5000  # Needs to be the same port specified on the computer.
+host_ip = "192.168.0.17"  # Local IP of your host, will be printed when server is started.
 
-pc = GPIOClient(host_ip, port)
+client = GPIOClient(host_ip)
+client.listen_for_commands()
 
-try:
-    pc.listen_for_commands()
-except KeyboardInterrupt:
-    print("Done")
